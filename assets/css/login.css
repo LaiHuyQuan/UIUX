@@ -113,8 +113,17 @@ select {
   transition: all ease-in-out 0.3s;
 }
 
+.login-btn a {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
 .login-btn:hover {
   background-color: #fff;
+  color: #000;
+}
+
+.login-btn:hover a {
   color: #000;
 }
 

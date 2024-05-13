@@ -103,7 +103,7 @@
                     <li><a class="dropdown-item" href="#">Cài đặt</a></li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="login.html">Đăng xuất</a>
+                      <a class="dropdown-item" href="index.html">Đăng xuất</a>
                     </li>
                   </ul>
                 </div>
@@ -157,7 +157,7 @@
         <div class="content-wrapper container">
           <div class="page-content">
             <section class="row">
-              <div class="col-12 col-lg-8">
+              <div class="col-12 col-lg-9">
                 <div class="kpi-list">
                   <div class="responsive">
                     <div class="col-6 col-lg-3 col-md-6">
@@ -182,7 +182,28 @@
                         </div>
                       </div>
                     </div>
-
+                    <div class="col-6 col-lg-3 col-md-6">
+                      <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                          <div class="row">
+                            <div
+                              class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
+                            >
+                              <div class="stats-icon green mb-2">
+                                <i class="iconly-boldAdd-User"></i>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                              <h6 class="text-muted font-semibold">
+                                Tiếng Nhật <br />
+                                tuần 30
+                              </h6>
+                              <h6 class="font-extrabold mb-0">60%</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-6 col-lg-3 col-md-6">
                       <div class="card">
                         <div class="card-body px-4 py-4-5">
@@ -276,100 +297,29 @@
 
                 <div class="row">
                   <div class="col-12">
-                    <div class="des-main">
-                      <div class="card-hd">
-                        <div class="card-lf">
-                          <h6 class="des-hd">Tiếng Nhật tuần 30</h6>
-                          <p class="des-hd">Ngày 4</p>
-                        </div>
-                        <div class="card-rt">
-                          <div class="add-btn">
-                            <i class="fa-solid fa-plus"></i> Thêm
-                          </div>
-                        </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Tuần 3 Tháng 5</h4>
                       </div>
-                      <div class="card-content">
-                        <div class="card-item">
-                          <div class="card-item-lf">
-                            <span class="center">Từ vựng</span>
-                            <div class="card-item-rt">
-                              <label>55</label>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  value=""
-                                  id=""
-                                  style="width: 20px; height: 20px"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item-rt">
-                            <div class="des-btn center">
-                              <i class="fa-solid fa-magnifying-glass-plus"></i>
-                              Chi tiết
-                            </div>
-                            <i class="fa-solid fa-trash"></i>
-                          </div>
-                        </div>
-                        <div class="card-item">
-                          <div class="card-item-lf">
-                            <span class="center">Ngữ pháp</span>
-                            <div class="card-item-rt">
-                              <label>5</label>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  value=""
-                                  id=""
-                                  style="width: 20px; height: 20px"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item-rt">
-                            <div class="des-btn center">
-                              <i class="fa-solid fa-magnifying-glass-plus"></i>
-                              Chi tiết
-                            </div>
-                            <i class="fa-solid fa-trash"></i>
-                          </div>
-                        </div>
-                        <div class="card-item">
-                          <div class="card-item-lf">
-                            <span class="center">Đọc hiểu</span>
-                            <div class="card-item-rt">
-                              <label>3</label>
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  value=""
-                                  id=""
-                                  style="width: 20px; height: 20px"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item-rt">
-                            <div class="des-btn center">
-                              <i class="fa-solid fa-magnifying-glass-plus"></i>
-                              Chi tiết
-                            </div>
-                            <i class="fa-solid fa-trash"></i>
-                          </div>
-                        </div>
+                      <div class="card-body">
+                        <div id="chart" class="center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-12 col-lg-3">
                 <div class="card">
                   <div class="card-body py-4 px-5">
-                    <div class="bar-chart"></div>
+                    <div class="d-flex align-items-center">
+                      <div class="avatar avatar-xl">
+                        <img src="./assets/img/ava.jpg" alt="Face 1" />
+                      </div>
+                      <div class="ms-3 name">
+                        <h5 class="font-bold">Bùi Anh Đức</h5>
+                        <h6 class="text-muted mb-0">Sinh viên</h6>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <span class="hd">Hôm nay</span>
@@ -464,6 +414,5 @@
     <!-- js file -->
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/description.js"></script>
   </body>
 </html>
