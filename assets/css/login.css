@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#content {
+  width: 100%;
+  height: 980px;
+  background-image: url(../img/login/background.jpg);
+  /* margin-top: 80px; */
+}
+
+.lg-form {
+  background: rgb(255, 255, 255);
+  width: 530px;
+  height: 730px;
+  border-radius: 20px;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+}
+
+.login-form {
+  padding: 48px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.hd-sub {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 24px 0;
+  color: #2b8ae8;
+}
+
+.login-form > input,
+select {
+  border-radius: 20px;
+  height: 40px;
+  border: 1px solid #a19f9d;
+  margin-bottom: 25px;
+  padding: 0 50px;
+  margin-right: 0px;
+  outline-style: none;
+}
+
+.login-form > input::placeholder {
+  font-size: 17px;
+  color: #605e5c;
+}
+
+.login-form .button {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fg-pass {
+  color: #3b3a39;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+.fg-pass:hover {
+  color: #3b3a39;
+}
+
+.fg-pass::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border-bottom: 1px solid #3b3a39;
+  width: 0;
+  transition: ease-in-out all 0.3s;
+}
+
+.fg-pass:hover::before {
+  width: 100%;
+}
+
+.login-btn {
+  background-color: #000;
+  width: 117px;
+  height: 47px;
+  border-radius: 30px;
+  border: 1px #000 solid;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.or span {
+  color: #605e5c;
+  /* width: 100%; */
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 5px 20px;
+}
+
+.or {
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.or::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #2b8ae8;
+  bottom: 40%;
+  z-index: 1;
+}
+
+.n-login {
+  padding: 13px;
+  border: 1px #000 solid;
+  width: 250px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+.n-login:hover {
+  background-color: #000;
+}
+
+.n-login:hover a {
+  color: #fff;
+}
+
+.regis {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.regis-button {
+  font-weight: 700;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.regis-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px #2b8ae8 solid;
+  width: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.regis-button:hover::before {
+  width: 100%;
+}
+
+/* regis-css */
+
+.c-box {
+  display: flex;
+}
+
+.c-box a {
+  margin-left: 10px;
+  color: #3b3a39;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.acp {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+}
+
+.acp a {
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+
+.acp a:hover {
+  color: #2b8ae8;
+}
