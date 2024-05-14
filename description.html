@@ -160,9 +160,9 @@
               <div class="col-12 col-lg-8">
                 <div class="kpi-list">
                   <div class="responsive">
-                    <div class="col-6 col-lg-3 col-md-6">
+                    <div class="col-6">
                       <div class="card">
-                        <div class="card-body px-4 py-4-5">
+                        <div class="card-body">
                           <div class="row">
                             <div
                               class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
@@ -183,9 +183,9 @@
                       </div>
                     </div>
 
-                    <div class="col-6 col-lg-3 col-md-6">
+                    <div class="col-6">
                       <div class="card">
-                        <div class="card-body px-4 py-4-5">
+                        <div class="card-body">
                           <div class="row">
                             <div
                               class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
@@ -205,9 +205,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 col-md-6">
+                    <div class="col-6">
                       <div class="card">
-                        <div class="card-body px-4 py-4-5">
+                        <div class="card-body">
                           <div class="row">
                             <div
                               class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
@@ -227,9 +227,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 col-md-6">
+                    <div class="col-6">
                       <div class="card">
-                        <div class="card-body px-4 py-4-5">
+                        <div class="card-body">
                           <div class="row">
                             <div
                               class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
@@ -249,9 +249,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 col-md-6">
+                    <div class="col-6">
                       <div class="card">
-                        <div class="card-body px-4 py-4-5">
+                        <div class="card-body">
                           <div class="row">
                             <div
                               class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start"
@@ -279,8 +279,10 @@
                     <div class="des-main">
                       <div class="card-hd">
                         <div class="card-lf">
-                          <h6 class="des-hd">Tiếng Nhật tuần 30</h6>
-                          <p class="des-hd">Ngày 4</p>
+                          <h6 class="des-hd" style="padding-left: 0">
+                            Tiếng Nhật tuần 30
+                          </h6>
+                          <p class="des-hd" style="padding-left: 0">Ngày 4</p>
                         </div>
                         <div class="card-rt">
                           <div class="add-btn">
@@ -368,81 +370,57 @@
               </div>
               <div class="col-12 col-lg-4">
                 <div class="card">
-                  <div class="card-body py-4 px-5">
-                    <div class="bar-chart"></div>
-                  </div>
+                  <div id="calendar"></div>
                 </div>
-                <span class="hd">Hôm nay</span>
-                <div class="trending">
-                  <div class="trend-cnt">
-                    <a href="#" class="trend-item">
-                      <span class="number center">1</span>
-                      <span class="center"
-                        >Ngày 4 <br />
-                        Tiếng Nhật tuần 30</span
-                      >
-                    </a>
-                    <a href="#" class="trend-item">
-                      <span class="number center">2</span>
-                      <span class="center"
-                        >Ngày 4 <br />
-                        Tiếng Anh tuần 10</span
-                      >
-                    </a>
-                    <a href="#" class="trend-item">
-                      <span class="number center">3</span>
-                      <span class="center"
-                        >Ngày 4 <br />
-                        Đọc sách tuần 86</span
-                      >
-                    </a>
-                    <a href="#" class="trend-item">
-                      <span class="number center">4</span>
-                      <span class="center"
-                        >Ngày 4 <br />
-                        UIUX tuần 12</span
-                      >
-                    </a>
-                    <a href="#" class="trend-item">
-                      <span class="number center">5</span>
-                      <span class="center"
-                        >Ngày 4 <br />
-                        GR1 tuần 12</span
-                      >
-                    </a>
+                <div class="trending" style="padding: 0">
+                  <div class="des-body">
+                    <div id="bar-chart-2"></div>
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header">
-                    <h4>Tiến độ hôm nay</h4>
-                  </div>
-                  <div class="card-body">
-                    <div id="chart-2"></div>
+                  <h6 class="des-hd">Dự đoán</h6>
+                  <h6 class="des-hd" style="font-size: 16px">
+                    Tiến độ trung bình 15%/ngày
+                  </h6>
+                  <div class="card-body des-body">
+                    <div id="bar-chart"></div>
                   </div>
                 </div>
               </div>
             </section>
           </div>
         </div>
-
-        <footer>
-          <div class="container">
-            <div class="footer clearfix mb-0 text-muted">
-              <div class="float-start">
-                <p>2023 &copy; Mazer</p>
-              </div>
-              <div class="float-end">
-                <p>
-                  Crafted with
-                  <span class="text-danger"><i class="bi bi-heart"></i></span>
-                  by <a href="https://saugi.me">Saugi</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          locale: "vi",
+          buttonText: {
+            today: "Hôm nay",
+            month: "Tháng",
+            week: "Tuần",
+            day: "Ngày",
+          },
+          dateClick: function (info) {
+            alert("Bạn đã click vào ngày: " + info.dateStr);
+          },
+        });
+        calendar.render();
+      });
+    </script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
+      rel="stylesheet"
+    />
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- FullCalendar Locales -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.min.js"></script>
 
     <!-- slick -->
     <script

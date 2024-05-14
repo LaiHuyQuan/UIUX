@@ -2,34 +2,27 @@ $(document).ready(function () {
   var options = {
     series: [
       {
-        name: "Marine Sprite",
-        data: [44, 55, 41, 37, 22, 43, 21],
+        name: "Đã hoàn thành",
+        data: [44, 55],
       },
       {
-        name: "Striking Calf",
-        data: [53, 32, 33, 52, 13, 43, 32],
-      },
-      {
-        name: "Tank Picture",
-        data: [12, 17, 11, 9, 15, 11, 20],
-      },
-      {
-        name: "Bucket Slope",
-        data: [9, 7, 5, 8, 6, 9, 4],
-      },
-      {
-        name: "Reborn Kid",
-        data: [25, 12, 19, 32, 25, 24, 10],
+        name: "Còn lại",
+        data: [12, 10],
       },
     ],
     chart: {
       type: "bar",
-      height: 350,
+      height: 150,
       stacked: true,
       stackType: "100%",
+      toolbar: { show: false },
+    },
+    grid: {
+      show: false,
     },
     plotOptions: {
       bar: {
+        width: 5,
         horizontal: true,
       },
     },
@@ -37,29 +30,75 @@ $(document).ready(function () {
       width: 1,
       colors: ["#fff"],
     },
-    title: {
-      text: "100% Stacked Bar",
-    },
     xaxis: {
-      categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+      categories: ["Hiện tại", "Dự đoán"],
+      width: 5,
     },
-    tooltip: {
-      y: {
-        formatter: function (val) {
-          return val + "K";
-        },
-      },
+    legend: {
+      show: false,
     },
+    tooltip: {},
     fill: {
       opacity: 1,
     },
-    legend: {
-      position: "top",
-      horizontalAlign: "left",
-      offsetX: 40,
-    },
+    colors: ["#008FFB", "#b2bec3"],
   };
 
   var barchart = new ApexCharts(document.querySelector("#bar-chart"), options);
   barchart.render();
+
+  // barchart2
+  var options = {
+    series: [
+      {
+        name: "Đã hoàn thành",
+        data: [3, 2, 2, 1],
+      },
+      {
+        name: "Còn lại",
+        data: [0, 1, 1, 2],
+      },
+    ],
+    chart: {
+      type: "bar",
+      height: 200,
+      stacked: true,
+      stackType: "100%",
+      toolbar: { show: false },
+    },
+    grid: {
+      show: false,
+    },
+    plotOptions: {
+      bar: {
+        width: 5,
+        horizontal: true,
+      },
+    },
+    stroke: {
+      width: 1,
+      colors: ["#fff"],
+    },
+    yaxixs: {
+      show: false,
+    },
+    xaxis: {
+      categories: ["Ngày 1", "Ngày 2", "Ngày 3", "Ngày 4"],
+      width: 5,
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {},
+    fill: {
+      opacity: 1,
+    },
+    colors: ["#008FFB", "#b2bec3"],
+  };
+
+  var barchart2 = new ApexCharts(
+    document.querySelector("#bar-chart-2"),
+    options
+  );
+  barchart2.render();
 });

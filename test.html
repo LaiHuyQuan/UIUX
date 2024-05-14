@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FullCalendar Tiếng Việt</title>
+    <!-- FullCalendar CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
+      rel="stylesheet"
+    />
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- FullCalendar Locales -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.min.js"></script>
   </head>
   <body>
-    <div>
+    <div id="calendar" style="width: 30%"></div>
 
-    </div>
-</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          locale: "vi", // Thiết lập ngôn ngữ tiếng Việt
+          events: [
+            {
+              title: "Sự kiện 1",
+              start: "2024-05-14",
+            },
+            {
+              title: "Sự kiện 2",
+              start: "2024-05-15",
+              end: "2024-05-17",
+            },
+          ],
+          dateCellRender: function (info) {
+            var date = info.date;
+            var cellEl = info.el;
+
+            // Kiểm tra nếu là một số ngày cụ thể và thêm lớp CSS cho các ngày đó
+            if (
+              date.getDate() === 5 ||
+              date.getDate() === 10 ||
+              date.getDate() === 15
+            ) {
+              cellEl.classList.add("marked-date");
+            }
+          },
+          headerToolbar: {
+            left: "prev,next today",
+            center: "title",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
+          },
+          buttonText: {
+            today: "Hôm nay",
+            month: "Tháng",
+            week: "Tuần",
+            day: "Ngày",
+          },
+        });
+        calendar.render();
+      });
+    </script>
   </body>
 </html>

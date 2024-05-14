@@ -192,3 +192,42 @@ html {
   background-color: #000;
   color: #fff;
 }
+
+.des-hd {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 20px 0 30px;
+  position: relative;
+}
+
+.des-body {
+  padding: 0 !important;
+}
+
+#calendar {
+  width: 90%;
+  margin: 5%;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 18px !important;
+  text-transform: capitalize;
+}
+
+.fc-daygrid-body tr:last-child {
+  display: none; /* Ẩn hàng cuối cùng của lịch */
+}
+
+.fc .fc-daygrid-day-events {
+  display: none;
+}
+
+.fc-scroller {
+  overflow: auto !important;
+}
+
+.has-event {
+  background-color: #ffd700;
+  color: #000000;
+  font-weight: bold;
+}
