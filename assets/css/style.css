@@ -73,19 +73,18 @@ input {
 
 .kpi-list {
   width: 100%;
+  background-color: #74b9ff;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  margin: 0 0 30px 0;
+  padding: 20px 30px 0;
 }
 .responsive {
   position: relative;
   padding-bottom: 0;
-  padding: 20px 30px;
-  margin: 0 0 30px 0;
-  background-color: #74b9ff !important;
-  border: 1px #000 solid;
-  /* height: 20vh; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 20px;
 }
 
 .kpi-list .item {
@@ -355,4 +354,85 @@ input {
 .avatar-2xl img {
   width: 200px;
   height: 200px;
+}
+
+.header-top {
+  padding: 10px !important;
+}
+
+.slick-active .col-6,
+.slick-active .slide-item {
+  margin-left: 5%;
+  width: 90% !important;
+  overflow: hidden;
+  height: 135px;
+}
+
+.slick-track {
+  height: 135px;
+  overflow: hidden;
+}
+
+.kpi-list-hd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hd-lf {
+  font-size: 16px;
+  background-color: #fbdfdf;
+  padding: 5px 10px;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  color: #000;
+  font-weight: 700;
+}
+
+.hd-rt {
+  color: #000;
+}
+
+.hd-rt span {
+  font-size: 16px;
+  padding-right: 20px;
+  font-weight: 700;
+}
+
+.slide-item {
+  /* border: #000 1px solid; */
+  width: 20%;
+  background-color: #57caeb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #000;
+}
+
+.item-top,
+.item-cnt {
+  display: flex;
+  justify-content: space-between !important;
+  margin-bottom: 20px;
+}
+
+.item-bot {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.done {
+  background-color: #33e9ab;
+}
+
+.doing {
+  background-color: #fffba0;
+}
+
+.past-due {
+  background-color: #fbdfdf;
+}
+
+.comming {
+  background-color: #fbdfdf;
 }
