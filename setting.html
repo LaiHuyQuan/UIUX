@@ -59,7 +59,7 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/iconly.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/calender.css" />
+    <link rel="stylesheet" href="./assets/css/setting.css" />
     <link rel="stylesheet" href="./assets/css/trangchu.css" />
   </head>
 
@@ -157,176 +157,59 @@
 
         <div class="content-wrapper container">
           <div class="page-content">
-            <section class="row">
-              <div class="col-12 col-lg-8">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="des-main" style="height: 110vh">
-                      <div class="calender-item">
-                        <div class="card-hd">
-                          <div class="card-lf">
-                            <h6 class="des-hd" style="padding-left: 0">
-                              Tiếng Nhật tuần 30
-                            </h6>
-                            <p class="des-hd" style="padding-left: 0">Ngày 4</p>
-                          </div>
-                          <div class="card-rt"></div>
-                        </div>
-                        <div class="card-content" style="overflow: auto">
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Từ vựng</span>
-                              <div class="card-item-rt">
-                                <label>55</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Ngữ pháp</span>
-                              <div class="card-item-rt">
-                                <label>5</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Đọc hiểu</span>
-                              <div class="card-item-rt">
-                                <label>3</label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="calender-item">
-                        <div class="card-hd">
-                          <div class="card-lf">
-                            <h6 class="des-hd" style="padding-left: 0">
-                              Tiếng Anh tuần 30
-                            </h6>
-                            <p class="des-hd" style="padding-left: 0">Ngày 4</p>
-                          </div>
-                          <div class="card-rt"></div>
-                        </div>
-                        <div class="card-content" style="overflow: auto">
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Từ vựng</span>
-                              <div class="card-item-rt">
-                                <label>100</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Ngữ pháp</span>
-                              <div class="card-item-rt">
-                                <label>2</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Đọc hiểu</span>
-                              <div class="card-item-rt">
-                                <label>3</label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="calender-item">
-                        <div class="card-hd">
-                          <div class="card-lf">
-                            <h6 class="des-hd" style="padding-left: 0">
-                              C++ tuần 30
-                            </h6>
-                            <p class="des-hd" style="padding-left: 0">Ngày 4</p>
-                          </div>
-                          <div class="card-rt"></div>
-                        </div>
-                        <div class="card-content" style="overflow: auto">
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Con trỏ</span>
-                              <div class="card-item-rt">
-                                <label>5</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-item">
-                            <div class="card-item-lf">
-                              <span class="center">Đệ quy</span>
-                              <div class="card-item-rt">
-                                <label>5</label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="top-blc">
+              <div class="d-flex align-items-center">
+                <div class="avatar avatar-xl">
+                  <img src="./assets/img/ava.jpg" alt="Face 1" />
+                </div>
+                <div class="ms-3 name">
+                  <h5 class="font-bold">Bùi Anh Đức</h5>
+                  <h6 class="text-muted mb-0">Sinh viên</h6>
                 </div>
               </div>
-              <div class="col-12 col-lg-4">
-                <div class="card">
-                  <div id="calendar"></div>
+            </div>
+            <div class="mid-blc">
+              <div class="mid-hd">
+                <div class="mid-lf">
+                  <p class="hd" style="padding: 0">Thông báo</p>
                 </div>
-                <div class="trending" style="padding: 0">
-                  <div class="des-body">
-                    <div id="bar-chart-2"></div>
-                  </div>
+                <div class="mid-rt">
+                  <select name="" id="">
+                    <option value="">Trước 30 phút</option>
+                    <option value="">Trước 1 tiếng</option>
+                    <option value="">Trước 3 tiếng</option>
+                    <option value="">Trước 5 tiếng</option>
+                  </select>
                 </div>
               </div>
-            </section>
+              <div class="mid-cnt">
+                <div>Gửi thông báo qua Email</div>
+                <div class="form-check form-switch fs-6">
+                  <input
+                    class="form-check-input me-0"
+                    type="checkbox"
+                    id="toggle-dark"
+                    style="cursor: pointer; height: 25px; width: 50px"
+                  />
+                  <label class="form-check-label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="bot-blc">
+              <div class="mid-hd">
+                <div class="mid-lf">
+                  <p class="hd" style="padding: 0">Cài đặt tài khoản</p>
+                </div>
+              </div>
+              <div class="mid-cnt" style="flex-direction: column">
+                <a href="">Bảo mật tài khoản</a>
+                <a href="">Chỉnh sửa thông tin</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="add-action-mockup hide">
-      <div class="des-hd">
-        <i class="fa-solid fa-note-sticky"></i>
-        Thêm danh mục
-      </div>
-      <div class="add-action-cnt">
-        <label class="action-hd" for="">Tên danh mục</label> <br />
-        <input class="action-input" type="text" placeholder="Tên danh mục" />
-        <br />
-        <label class="action-hd" for="">Ngày</label> <br />
-        <input class="action-input" type="text" placeholder="dd/mm/yyyy" />
-        <br />
-        <div class="add-btn" style="width: 40%">
-          <i class="fa-solid fa-plus"></i>Thêm nhiệm vụ
-        </div>
-        <div class="quest-cnt"></div>
-      </div>
-      <div class="add-action-bot">
-        <div class="close-btn">Thoát</div>
-        <div class="save-btn"><i class="fa-solid fa-floppy-disk"></i> Lưu</div>
-      </div>
-    </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var calendarEl = document.getElementById("calendar");
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: "dayGridMonth",
-          locale: "vi",
-
-          buttonText: {
-            today: "Hôm nay",
-            month: "Tháng",
-            week: "Tuần",
-            day: "Ngày",
-          },
-          dateClick: function (info) {
-            alert("Bạn đã click vào ngày: " + info.dateStr);
-          },
-        });
-        calendar.render();
-      });
-    </script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
