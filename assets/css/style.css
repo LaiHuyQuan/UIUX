@@ -4,6 +4,15 @@ html {
   box-sizing: border-box;
 }
 
+#app {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+input {
+  border: 1px #000 solid;
+}
+
 .login-form {
   position: relative;
 }
@@ -226,8 +235,111 @@ html {
   overflow: auto !important;
 }
 
-.has-event {
+.marked-date {
   background-color: #ffd700;
   color: #000000;
   font-weight: bold;
+}
+
+.add-action-mockup {
+  position: fixed;
+  top: 10%;
+  left: 40vw;
+  z-index: 100;
+  background-color: #fff;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  width: 30vw;
+  height: 80vh;
+  padding: 30px;
+  color: #000;
+}
+
+.add-action-mockup .des-hd {
+  padding-left: 0;
+  font-size: 25px;
+}
+
+.add-action-cnt {
+  height: 80%;
+  margin-bottom: 5%;
+  /* overflow: auto; */
+}
+
+.action-hd {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.action-input {
+  border: 1px #d5d5d5 solid;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.quest-cnt {
+  height: 50%;
+  overflow: auto;
+}
+
+.quest-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.quest-item-lf {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px 10% 5px 0;
+  justify-content: space-between;
+}
+
+.item-lf-dis {
+  padding: 3px 12px;
+  background-color: #fbdfdf;
+  border-radius: 20px;
+  border: #000 1px solid;
+}
+
+.quest-item input {
+  width: 40%;
+}
+
+.add-action-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-btn {
+  background-color: #000;
+  border-radius: 15px;
+  padding: 3px 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  border: 1px #000 solid;
+}
+
+.close-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.save-btn {
+  background-color: #3950a2;
+  color: #fff;
+  padding: 3px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px #3950a2 solid;
+}
+
+.hide {
+  display: none;
 }

@@ -26,7 +26,7 @@
           events: [
             {
               title: "Sự kiện 1",
-              start: "2024-05-14",
+              start: "2024-05-16",
             },
             {
               title: "Sự kiện 2",
@@ -37,15 +37,7 @@
           dateCellRender: function (info) {
             var date = info.date;
             var cellEl = info.el;
-
-            // Kiểm tra nếu là một số ngày cụ thể và thêm lớp CSS cho các ngày đó
-            if (
-              date.getDate() === 5 ||
-              date.getDate() === 10 ||
-              date.getDate() === 15
-            ) {
-              cellEl.classList.add("marked-date");
-            }
+            cellEl.classList.add("marked-date");
           },
           headerToolbar: {
             left: "prev,next today",

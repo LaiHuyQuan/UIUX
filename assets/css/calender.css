@@ -1,0 +1,25 @@
+.calender-item {
+  width: 48%;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  padding: 20px;
+  height: 45%;
+  /* margin-bottom: 1%; */
+}
+
+.calender-item .card-item-lf {
+  width: 100%;
+}
+
+.calender-item .card-item-rt {
+  justify-content: flex-end;
+}
+
+
+
+.des-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

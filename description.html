@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="lìght">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -276,7 +276,7 @@
 
                 <div class="row">
                   <div class="col-12">
-                    <div class="des-main">
+                    <div class="des-main" style="height: 97vh;">
                       <div class="card-hd">
                         <div class="card-lf">
                           <h6 class="des-hd" style="padding-left: 0">
@@ -285,12 +285,10 @@
                           <p class="des-hd" style="padding-left: 0">Ngày 4</p>
                         </div>
                         <div class="card-rt">
-                          <div class="add-btn">
-                            <i class="fa-solid fa-plus"></i> Thêm
-                          </div>
+                          
                         </div>
                       </div>
-                      <div class="card-content">
+                      <div class="card-content" style="overflow: auto;">
                         <div class="card-item">
                           <div class="card-item-lf">
                             <span class="center">Từ vựng</span>
@@ -392,6 +390,30 @@
         </div>
       </div>
     </div>
+    <div class="add-action-mockup hide">
+      <div class="des-hd">
+        <i class="fa-solid fa-note-sticky"></i>
+        Thêm danh mục
+      </div>
+      <div class="add-action-cnt">
+        <label class="action-hd" for="">Tên danh mục</label> <br />
+        <input class="action-input" type="text" placeholder="Tên danh mục" />
+        <br />
+        <label class="action-hd" for="">Ngày</label> <br />
+        <input class="action-input" type="text" placeholder="dd/mm/yyyy" />
+        <br />
+        <div class="add-btn" style="width: 40%">
+          <i class="fa-solid fa-plus"></i>Thêm nhiệm vụ
+        </div>
+        <div class="quest-cnt">
+          </div>
+        </div>
+      <div class="add-action-bot">
+        <div class="close-btn">Thoát</div>
+        <div class="save-btn"><i class="fa-solid fa-floppy-disk"></i> Lưu</div>
+      </div>
+      </div>
+    </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -399,6 +421,7 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
           locale: "vi",
+
           buttonText: {
             today: "Hôm nay",
             month: "Tháng",

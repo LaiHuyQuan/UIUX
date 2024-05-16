@@ -84,7 +84,7 @@ $(document).ready(function () {
     legend: {
       position: "bottom",
     },
-    colors: ["#74B9FF", "#ff3f34"],
+    colors: ["#059bfe", "#ff4069"],
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), options);
