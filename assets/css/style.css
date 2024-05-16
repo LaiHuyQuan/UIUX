@@ -362,8 +362,8 @@ input {
 
 .slick-active .col-6,
 .slick-active .slide-item {
-  margin-left: 5%;
-  width: 90% !important;
+  margin-left: 2.5%;
+  width: 95% !important;
   overflow: hidden;
   height: 135px;
 }
