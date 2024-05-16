@@ -248,7 +248,7 @@ input {
 .add-kpi-mockup {
   position: fixed;
   top: 10%;
-  left: 40vw;
+  left: 35vw;
   z-index: 100;
   background-color: #fff;
   border: 1px #000 solid;
@@ -287,7 +287,7 @@ input {
 }
 
 .quest-cnt {
-  height: 50%;
+  height: 35vh;
   overflow: auto;
 }
 
