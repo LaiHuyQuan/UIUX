@@ -244,7 +244,8 @@ input {
   font-weight: bold;
 }
 
-.add-action-mockup {
+.add-action-mockup,
+.add-kpi-mockup {
   position: fixed;
   top: 10%;
   left: 40vw;
@@ -258,7 +259,8 @@ input {
   color: #000;
 }
 
-.add-action-mockup .des-hd {
+.add-action-mockup .des-hd,
+.add-kpi-mockup .des-hd {
   padding-left: 0;
   font-size: 25px;
 }
@@ -435,4 +437,39 @@ input {
 
 .comming {
   background-color: #fbdfdf;
+}
+
+.page-hd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  margin-bottom: 30px;
+}
+
+.page-hd a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.blc-hd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.blc-hd-lf {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.blc-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.blc-cnt {
+  height: 20vh;
+  margin-bottom: 2vh;
+  overflow: auto;
 }

@@ -33,5 +33,40 @@ $(".responsive").slick({
 });
 
 $(document).ready(function () {
-    $
+  $(".add-kpi-mockup").on("click", ".add-action", function () {
+    var blcItem =
+      '<div class="blc-item">' +
+      '<div class="blc-cnt-lf">' +
+      '<input type="text" placeholder="Tên danh mục" class="item-lf-dis" />' +
+      "</div>" +
+      '<div class="blc-cnt-rt center">' +
+      '<div class="add-btn add-quest" style="margin-right: 10px">' +
+      '<i class="fa-solid fa-magnifying-glass-plus"></i> Chi tiết' +
+      "</div>" +
+      '<i class="fa-solid fa-trash"></i>' +
+      "</div>" +
+      "</div>";
+
+    $(".blc-cnt").append(blcItem);
+  });
+
+  $(".add-kpi-mockup").on("click", ".close-btn", function () {
+    $(".add-kpi-mockup").addClass("hide");
+  });
+
+  $(".add-kpi-mockup").on("click", ".save-btn", function () {
+    $(".add-kpi-mockup").addClass("hide");
+  });
+
+  $(".add-kpi-mockup").on("click", ".add-quest", function () {
+    $(".add-action-mockup").removeClass("hide");
+  });
+
+  $(".page-hd").on("click", ".add-btn", function () {
+    $(".add-kpi-mockup").removeClass("hide");
+  });
+
+  $(".kpi-list").on("click", ".add-btn", function () {
+    $(".add-action-mockup").removeClass("hide");
+  });
 });
