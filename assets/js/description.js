@@ -132,4 +132,11 @@ $(document).ready(function () {
   $(".add-action-mockup").on("click", ".save-btn", function () {
     $(".add-action-mockup").toggleClass("hide");
   });
+
+  // document.getElementById("toast-success").addEventListener("click", () => {
+  //   Toast.fire({
+  //     icon: "success",
+  //     title: "Signed in successfully",
+  //   });
+  // });
 });

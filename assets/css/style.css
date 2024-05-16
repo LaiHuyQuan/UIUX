@@ -235,6 +235,10 @@ input {
   overflow: auto !important;
 }
 
+.table-borderless {
+  font-size: 20px;
+}
+
 .marked-date {
   background-color: #ffd700;
   color: #000000;
@@ -342,4 +346,13 @@ input {
 
 .hide {
   display: none;
+}
+
+.page-title {
+  padding: 0px 110px;
+}
+
+.avatar-2xl img {
+  width: 200px;
+  height: 200px;
 }

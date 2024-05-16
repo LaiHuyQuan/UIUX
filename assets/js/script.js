@@ -94,7 +94,8 @@ $(document).ready(function () {
   var radialGradientOptions = {
     series: [75],
     chart: {
-      height: 230,
+      width: 256,
+      // height: 230,
       type: "radialBar",
       toolbar: {
         show: true,
