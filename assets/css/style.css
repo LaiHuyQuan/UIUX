@@ -473,3 +473,9 @@ input {
   margin-bottom: 2vh;
   overflow: auto;
 }
+
+.slick-next,
+.slick-prev {
+  opacity: 1 !important;
+  color: #000 !important;
+}
