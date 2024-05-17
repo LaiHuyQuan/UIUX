@@ -56,6 +56,7 @@ $(document).ready(function () {
 
   $(".add-kpi-mockup").on("click", ".save-btn", function () {
     $(".add-kpi-mockup").addClass("hide");
+    $(".options-mockup").addClass("hide");
   });
 
   $(".add-kpi-mockup").on("click", ".add-quest", function () {
@@ -63,10 +64,18 @@ $(document).ready(function () {
   });
 
   $(".page-hd").on("click", ".add-btn", function () {
-    $(".add-kpi-mockup").removeClass("hide");
+    $(".options-mockup").removeClass("hide");
   });
 
   $(".kpi-list").on("click", ".add-btn", function () {
     $(".add-action-mockup").removeClass("hide");
+  });
+
+  $(".options-mockup").on("click", ".fa-x", function () {
+    $(".options-mockup").addClass("hide");
+  });
+
+  $(".options-mockup").on("click", ".add-btn", function () {
+    $(".add-kpi-mockup").removeClass("hide");
   });
 });

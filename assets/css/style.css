@@ -73,7 +73,7 @@ input {
 
 .kpi-list {
   width: 100%;
-  background-color: #74b9ff;
+  background-color: #435ebe;
   border: 1px #000 solid;
   border-radius: 20px;
   margin: 0 0 30px 0;
@@ -114,11 +114,6 @@ input {
 .item-rt {
   width: 10vw;
   justify-content: flex-start;
-}
-
-.slick-dot {
-  position: absolute;
-  top: -100px;
 }
 
 .des-main {
@@ -366,13 +361,13 @@ input {
 .slick-active .slide-item {
   margin-left: 2.5%;
   width: 95% !important;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 135px;
 }
 
 .slick-track {
-  height: 135px;
-  overflow: hidden;
+  height: 152px;
+  /* overflow: hidden; */
 }
 
 .kpi-list-hd {

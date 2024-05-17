@@ -8,3 +8,25 @@
   background-color: transparent;
   color: #000;
 }
+.options-mockup {
+  position: fixed;
+  width: 30vw;
+  left: 35vw;
+  top: 30vh;
+  height: 34vh;
+  background-color: #fff;
+  z-index: 100;
+  padding: 30px;
+  border: #000 1px solid;
+  border-radius: 20px;
+}
+
+.options-mockup .add-btn {
+  margin-bottom: 20px;
+}
+
+.basic-filepond {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+}
