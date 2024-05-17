@@ -98,7 +98,7 @@ $(document).ready(function () {
       // height: 230,
       type: "radialBar",
       toolbar: {
-        show: true,
+        show: false,
       },
     },
     plotOptions: {
