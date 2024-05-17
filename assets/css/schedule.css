@@ -1,0 +1,10 @@
+.kpi-list .add-btn {
+  background-color: #000;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.kpi-list .add-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
