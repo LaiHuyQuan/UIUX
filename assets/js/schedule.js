@@ -1,37 +1,3 @@
-$(".responsive").slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
-
 $(document).ready(function () {
   $(".add-kpi-mockup").on("click", ".add-action", function () {
     var blcItem =
@@ -57,6 +23,8 @@ $(document).ready(function () {
   $(".add-kpi-mockup").on("click", ".save-btn", function () {
     $(".add-kpi-mockup").addClass("hide");
     $(".options-mockup").addClass("hide");
+    addKpiList();
+    loadSlider();
   });
 
   $(".add-kpi-mockup").on("click", ".add-quest", function () {
@@ -78,4 +46,105 @@ $(document).ready(function () {
   $(".options-mockup").on("click", ".add-btn", function () {
     $(".add-kpi-mockup").removeClass("hide");
   });
+
+  // loadSlider
+  function loadSlider() {
+    $(".responsive").slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+
+  // add kpi list
+  function addKpiList() {
+    var newKpiList =
+      '<div class="col-12 col-lg-12">' +
+      '<div class="kpi-list" style="background-color: #fff">' +
+      '<div class="kpi-list-hd">' +
+      '<div class="hd-lf">' +
+      "<span>ABC tuần 30</span>" +
+      "</div>" +
+      '<div class="hd-rt center">' +
+      "<span>01/04/2024-07/04/2024</span>" +
+      "<span>175/300</span>" +
+      '<div class="add-btn">' +
+      '<i class="fa-solid fa-plus"></i> Thêm' +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      '<div class="responsive blc1">' +
+      "</div>" +
+      "</div>" +
+      "</div>";
+
+    $(".schedule-content").append(newKpiList);
+    addKpiItem("Ngày 1", "01/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 2", "02/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 3", "03/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 4", "04/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    loadSlider();
+  }
+
+  // add kpi item
+  function addKpiItem(name, date, questNum, blockName) {
+    var newKpiItem =
+      '<div class="slide-item comming">' +
+      '<div class="item-top center">' +
+      '<span style="font-weight: 700">' +
+      name +
+      "</span>" +
+      '<span class="add-btn"' +
+      '><i class="fa-solid fa-plus"></i> Chi tiết</span' +
+      ">" +
+      "</div>" +
+      '<div class="item-cnt">' +
+      "<span>Ngày</span>" +
+      "<span>" +
+      date +
+      "</span>" +
+      "</div>" +
+      '<div class="item-bot">' +
+      "<span>Tiến độ</span>" +
+      "<span>0/" +
+      questNum +
+      "</span>" +
+      "</div>" +
+      "</div> ";
+
+    blockName.append(newKpiItem);
+  }
+  loadSlider();
 });
