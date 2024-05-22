@@ -220,6 +220,8 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
+  border-radius: 15px;
 }
 
 .cate-item {
@@ -824,5 +826,18 @@ a {
 
   .cnt-dis .cnt-dis-bot {
     display: none;
+  }
+
+  .lg-form {
+    width: 95% !important;
+  }
+
+  .login-form {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .lg-form input {
+    padding: 0 20px !important;
   }
 }

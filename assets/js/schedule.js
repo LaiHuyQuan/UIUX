@@ -17,33 +17,41 @@ $(document).ready(function () {
   });
 
   $(".add-kpi-mockup").on("click", ".close-btn", function () {
+    $(".gray-bg").addClass("hide");
     $(".add-kpi-mockup").addClass("hide");
   });
 
   $(".add-kpi-mockup").on("click", ".save-btn", function () {
+    $(".gray-bg").addClass("hide");
+    $(".options-gray-bg").addClass("hide");
     $(".add-kpi-mockup").addClass("hide");
     $(".options-mockup").addClass("hide");
     addKpiList();
-    loadSlider();
+    // loadSlider();
   });
 
   $(".add-kpi-mockup").on("click", ".add-quest", function () {
+    $(".action-gray-bg").removeClass("hide");
     $(".add-action-mockup").removeClass("hide");
   });
 
   $(".page-hd").on("click", ".add-btn", function () {
+    $(".options-gray-bg").removeClass("hide");
     $(".options-mockup").removeClass("hide");
   });
 
   $(".kpi-list").on("click", ".add-btn", function () {
+    $(".action-gray-bg").removeClass("hide");
     $(".add-action-mockup").removeClass("hide");
   });
 
   $(".options-mockup").on("click", ".fa-x", function () {
+    $(".options-gray-bg").addClass("hide");
     $(".options-mockup").addClass("hide");
   });
 
   $(".options-mockup").on("click", ".add-btn", function () {
+    $(".options-gray-bg").removeClass("hide");
     $(".add-kpi-mockup").removeClass("hide");
   });
 
@@ -95,7 +103,7 @@ $(document).ready(function () {
       "</div>" +
       '<div class="hd-rt center">' +
       "<span>01/04/2024-07/04/2024</span>" +
-      "<span>175/300</span>" +
+      '<span class="sp1">175/300</span>' +
       '<div class="add-btn">' +
       '<i class="fa-solid fa-plus"></i> Thêm' +
       "</div>" +
@@ -112,9 +120,9 @@ $(document).ready(function () {
     addKpiItem("Ngày 3", "03/06/2003", 120, $(".blc1"));
     addKpiItem("Ngày 4", "04/06/2003", 120, $(".blc1"));
     addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
-    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
-    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
-    addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    // addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    // addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
+    // addKpiItem("Ngày 5", "05/06/2003", 120, $(".blc1"));
     loadSlider();
   }
 
@@ -147,4 +155,31 @@ $(document).ready(function () {
     blockName.append(newKpiItem);
   }
   loadSlider();
+  $(".header-top-right").on("click", ".burger-btn", function () {
+    $(".nav-respon").css("left", "0px");
+    $(".shadow").css("display", "block");
+  });
+
+  $(".close-nav").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(".shadow").css("display", "none");
+  });
+
+  $(".shadow").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(this).css("display", "none");
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-top").fadeIn();
+    } else {
+      $(".scroll-top").fadeOut();
+    }
+  });
+
+  $(".scroll-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 });

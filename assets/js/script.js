@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-  function loadSlider(){
+  function loadSlider() {
     $(".responsive").slick({
       dots: true,
       infinite: false,
@@ -28,13 +27,14 @@ $(document).ready(function () {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
           },
         },
       ],
     });
   }
+
   // chart
   var options = {
     series: [
@@ -61,6 +61,12 @@ $(document).ready(function () {
       {
         breakpoint: 480,
         options: {
+          chart: {
+            width: "100%",
+          },
+          xaxis: {
+            categories: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+          },
           legend: {
             position: "bottom",
             offsetX: -10,
@@ -96,7 +102,7 @@ $(document).ready(function () {
 
   // chart-2
   var radialGradientOptions = {
-    series: [75],
+    series: [63],
     chart: {
       width: 256,
       // height: 230,
@@ -181,4 +187,32 @@ $(document).ready(function () {
     radialGradientOptions
   );
   radialGradient.render();
+
+  $(".header-top-right").on("click", ".burger-btn", function () {
+    $(".nav-respon").css("left", "0px");
+    $(".shadow").css("display", "block");
+  });
+
+  $(".close-nav").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(".shadow").css("display", "none");
+  });
+
+  $(".shadow").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(this).css("display", "none");
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-top").fadeIn();
+    } else {
+      $(".scroll-top").fadeOut();
+    }
+  });
+
+  $(".scroll-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 });

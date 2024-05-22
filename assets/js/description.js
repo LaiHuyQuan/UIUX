@@ -103,6 +103,7 @@ $(document).ready(function () {
   barchart2.render();
 
   $(".des-main").on("click", ".des-btn", function () {
+    $(".action-gray-bg").removeClass("hide");
     $(".add-action-mockup").toggleClass("hide");
   });
 
@@ -127,9 +128,11 @@ $(document).ready(function () {
 
   $(".add-action-mockup").on("click", ".close-btn", function () {
     $(".add-action-mockup").toggleClass("hide");
+    $(".action-gray-bg").addClass("hide");
   });
 
   $(".add-action-mockup").on("click", ".save-btn", function () {
+    $(".action-gray-bg").addClass("hide");
     $(".add-action-mockup").toggleClass("hide");
   });
 

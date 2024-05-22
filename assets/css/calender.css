@@ -15,11 +15,57 @@
   justify-content: flex-end;
 }
 
-
-
 .des-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 575.98px) {
+  .calender-row {
+    flex-direction: column-reverse;
+  }
+
+  .fc-toolbar-chunk {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
+  .fc-today-button {
+    display: none !important;
+  }
+
+  .trending {
+    display: none;
+  }
+
+  .des-main {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    height: auto !important;
+  }
+
+  .calender-item {
+    height: auto !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+    padding: 15px !important;
+  }
+
+  .calender-item .des-hd {
+    padding: 0 !important;
+  }
+
+  .lf {
+    width: 60%;
+  }
+  .card-content {
+    display: none;
+  }
+
+  .des-hd {
+    margin: 0 !important;
+  }
 }

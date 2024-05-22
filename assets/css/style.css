@@ -476,3 +476,162 @@ input {
   margin-top: -10px;
 }
 
+.gray-bg,
+.options-gray-bg,
+.action-gray-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d5d5d5;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.des-main-res2 {
+  display: none;
+}
+
+/* Extra small devices (portrait phone, less than 576px) */
+@media (max-width: 575.98px) {
+  .row .col-md-4 {
+    display: none !important;
+  }
+
+  .col-6 .row {
+    justify-content: space-between !important;
+    flex-direction: row !important;
+  }
+
+  #chart {
+    height: 350px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .name-card {
+    display: none;
+  }
+
+  .header-top-right {
+    width: 100%;
+    justify-content: space-between !important;
+    flex-direction: row-reverse;
+  }
+
+  .page-hd {
+    flex-direction: column;
+  }
+
+  .page-hd-lf {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .mb-5 {
+    margin-bottom: 30px !important;
+  }
+
+  .kpi-list-hd {
+    flex-direction: column;
+  }
+
+  .hd-lf {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hd-rt {
+    justify-content: space-between !important;
+  }
+  .hd-rt span {
+    width: 33.3%;
+    padding-right: 10px;
+  }
+  .sp1 {
+    text-align: end;
+  }
+
+  .add-action-mockup,
+  .add-kpi-mockup {
+    width: 95%;
+    left: 2.5%;
+    height: 600px;
+  }
+
+  .add-action-mockup .add-btn,
+  .add-kpi-mockup .add-btn {
+    width: 50% !important;
+  }
+
+  .quest-cnt {
+    height: 250px;
+  }
+
+  .options-mockup {
+    color: #000;
+    width: 95% !important;
+    left: 2.5% !important;
+    height: 265px !important;
+    z-index: 50;
+  }
+  .des-hd .fa-x {
+    padding-left: 70px !important;
+  }
+
+  .quest-item input {
+    width: 45% !important;
+  }
+
+  .add-kpi-mockup .add-btn {
+    width: 100% !important;
+  }
+
+  .blc-cnt-lf {
+    width: 50%;
+  }
+
+  .item-lf-dis {
+    width: 100%;
+  }
+
+  .blc-cnt {
+    height: 160px;
+  }
+
+  .calender-row {
+    flex-direction: column-reverse;
+  }
+
+  .fc-toolbar-chunk {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
+  .fc-today-button {
+    display: none !important;
+  }
+  .des-main-res1 {
+    display: none;
+  }
+  .des-main-res2 {
+    display: block !important;
+    height: 350px !important;
+    margin-bottom: 20px;
+  }
+
+  .card-item-lf {
+    width: 75% !important;
+  }
+
+  .card-item-rt {
+    width: 25% !important;
+  }
+
+  .trending {
+    margin-bottom: 20px !important;
+  }
+}
