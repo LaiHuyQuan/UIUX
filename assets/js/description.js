@@ -124,6 +124,10 @@ $(document).ready(function () {
 
   $("body").on("click", ".fa-trash", function () {
     $(this).parent().parent().remove();
+    Toast.fire({
+      icon: "success",
+      title: "Đã xóa nhiệm vụ",
+    });
   });
 
   $(".add-action-mockup").on("click", ".close-btn", function () {
@@ -134,6 +138,27 @@ $(document).ready(function () {
   $(".add-action-mockup").on("click", ".save-btn", function () {
     $(".action-gray-bg").addClass("hide");
     $(".add-action-mockup").toggleClass("hide");
+    var newQuest =
+      '<div class="card-item">' +
+      '<div class="card-item-lf">' +
+      '<span class="center">Nhiệm vụ mới</span>' +
+      '<div class="card-item-rt">' +
+      "<label>100</label>" +
+      '<div class="form-check">' +
+      '<input class="form-check-input" type="checkbox" value="" id="" style="width: 20px; height: 20px" />' +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      '<div class="card-item-rt">' +
+      '<i class="fa-solid fa-trash"></i>' +
+      "</div>" +
+      "</div>";
+
+    $(".des-main").append(newQuest);
+    Toast.fire({
+      icon: "success",
+      title: "Đã thêm nhiệm vụ",
+    });
   });
 
   // document.getElementById("toast-success").addEventListener("click", () => {

@@ -1,3 +1,20 @@
+const Swal2 = Swal.mixin({
+  customClass: {
+    input: "form-control",
+  },
+});
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener("mouseenter", Swal.stopTimer);
+    toast.addEventListener("mouseleave", Swal.resumeTimer);
+  },
+});
 $(document).ready(function () {
   $(".add-kpi-mockup").on("click", ".add-action", function () {
     var blcItem =
@@ -26,6 +43,10 @@ $(document).ready(function () {
     $(".options-gray-bg").addClass("hide");
     $(".add-kpi-mockup").addClass("hide");
     $(".options-mockup").addClass("hide");
+    Swal2.fire({
+      icon: "success",
+      title: "Đã thêm kế hoạch",
+    });
     addKpiList();
     // loadSlider();
   });
@@ -154,7 +175,6 @@ $(document).ready(function () {
 
     blockName.append(newKpiItem);
   }
-  loadSlider();
   $(".header-top-right").on("click", ".burger-btn", function () {
     $(".nav-respon").css("left", "0px");
     $(".shadow").css("display", "block");
@@ -182,4 +202,6 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
+
+  loadSlider();
 });
