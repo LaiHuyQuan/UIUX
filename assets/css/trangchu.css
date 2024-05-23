@@ -383,7 +383,7 @@ a {
 
 .trending {
   padding: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   border: #000 1px solid;
   border-radius: 20px;
   font-size: 24px;
@@ -568,12 +568,12 @@ a {
 }
 
 .nav-respon {
-  position: absolute;
+  position: fixed;
   left: -500px;
   background-color: #ffffff;
   top: 0px;
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
   z-index: 100;
   width: 400px;
   max-width: 100%;

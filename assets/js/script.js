@@ -215,4 +215,12 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
+
+  $(".kpi-list").on("click", ".card-body", function () {
+    changePage("description.html");
+  });
+
+  function changePage(url) {
+    window.location.href = url;
+  }
 });

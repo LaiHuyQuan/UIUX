@@ -87,6 +87,10 @@ input {
   justify-content: space-between;
 }
 
+.kpi-list .card-body {
+  cursor: pointer;
+}
+
 .kpi-list .item {
   display: flex !important;
   flex-direction: row;
@@ -493,6 +497,10 @@ input {
   display: none;
 }
 
+.name-card {
+  margin-bottom: 22px !important;
+}
+
 /* Extra small devices (portrait phone, less than 576px) */
 @media (max-width: 575.98px) {
   .row .col-md-4 {
@@ -633,5 +641,36 @@ input {
 
   .trending {
     margin-bottom: 20px !important;
+  }
+
+  .mid-blc .hd,
+  .bot-blc .hd {
+    margin-left: 0 !important;
+  }
+  .mid-cnt {
+    padding: 0 !important;
+  }
+
+  option {
+    font-size: 14px;
+    margin-left: -10px !important;
+  }
+
+  h3 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .sp-input {
+    width: 80% !important;
+  }
+
+  .secu-h3 {
+    font-size: 30px !important;
+    text-align: left;
+  }
+
+  .page-title {
+    padding: 12px !important;
   }
 }

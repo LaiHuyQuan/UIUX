@@ -29,3 +29,22 @@ select {
   font-size: 20px;
   color: #000;
 }
+
+@media (max-width: 575.98px) {
+  html {
+    overflow: auto !important;
+  }
+
+  .bot-main {
+    flex-direction: column !important;
+    padding-left: 50px !important;
+  }
+
+  .bot-main a {
+    padding-bottom: 20px !important;
+  }
+
+  .page-footer {
+    display: none !important;
+  }
+}
