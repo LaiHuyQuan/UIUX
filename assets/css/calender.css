@@ -22,6 +22,24 @@
   flex-wrap: wrap;
 }
 
+.fc-bg-event.custom-background {
+  background-image: url("../img/svg/noti.svg") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  /* background-repeat: no-repeat !important; */
+  /* background-position: center !important; */
+}
+
+.fc .fc-daygrid-day-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-daygrid-day-number {
+  text-align: center !important; /* Căn giữa các số trong ngày */
+}
+/* responsive */
 @media (max-width: 575.98px) {
   .calender-row {
     flex-direction: column-reverse;

@@ -217,7 +217,7 @@
               </div>
               <div class="link-blc">
                 <a href="">Liên hệ</a>
-                 
+
                 <a href="">Chính sách bảo mật</a>
                 <a style="border: none" href="">Thỏa thuận người dùng</a>
               </div>
@@ -427,17 +427,29 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
           locale: "vi",
-
+          selectable: true,
           buttonText: {
             today: "Hôm nay",
             month: "Tháng",
             week: "Tuần",
             day: "Ngày",
           },
-          dateClick: function (info) {
-            alert("Bạn đã click vào ngày: " + info.dateStr);
-          },
+          events: [
+            {
+              start: "2024-05-10",
+              end: "2024-05-12",
+              display: "background",
+              className: "custom-background",
+            },
+            {
+              start: "2024-05-21",
+              end: "2024-05-26",
+              display: "background",
+              className: "custom-background",
+            },
+          ],
         });
+
         calendar.render();
       });
     </script>
