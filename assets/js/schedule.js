@@ -47,7 +47,7 @@ $(document).ready(function () {
       icon: "success",
       title: "Đã thêm kế hoạch",
     });
-    addKpiList();
+    // addKpiList();
     // loadSlider();
   });
 
