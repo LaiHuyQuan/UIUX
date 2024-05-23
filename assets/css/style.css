@@ -673,4 +673,7 @@ input {
   .page-title {
     padding: 12px !important;
   }
+  .nav-respon h3 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
 }
