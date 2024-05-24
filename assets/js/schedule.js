@@ -203,5 +203,13 @@ $(document).ready(function () {
     return false;
   });
 
+  $(".kpi-list").on("click", ".hd-lf", function () {
+    changePage("description.html");
+  });
+
+  function changePage(url) {
+    window.location.href = url;
+  }
+
   loadSlider();
 });

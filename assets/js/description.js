@@ -142,8 +142,8 @@ $(document).ready(function () {
       '<div class="card-item">' +
       '<div class="card-item-lf">' +
       '<span class="center">Nhiệm vụ mới</span>' +
-      '<div class="card-item-rt">' +
-      "<label>100</label>" +
+      '<div class="card-item-right">' +
+      "<label>10</label>" +
       '<div class="form-check">' +
       '<input class="form-check-input" type="checkbox" value="" id="" style="width: 20px; height: 20px" />' +
       "</div>" +
