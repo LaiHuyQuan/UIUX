@@ -3,11 +3,11 @@ $(document).ready(function () {
     series: [
       {
         name: "Đã hoàn thành",
-        data: [44, 55],
+        data: [44, 51],
       },
       {
         name: "Còn lại",
-        data: [12, 10],
+        data: [12, 5],
       },
     ],
     chart: {
