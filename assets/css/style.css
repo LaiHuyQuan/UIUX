@@ -161,7 +161,8 @@ input {
 }
 
 .card-item-lf,
-.card-item-rt {
+.card-item-rt,
+.card-item-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -178,6 +179,12 @@ input {
 }
 
 .card-item-rt {
+  width: 10%;
+  height: 37px;
+  align-items: center;
+}
+
+.card-item-right {
   width: 10%;
   height: 37px;
   align-items: center;
@@ -507,6 +514,24 @@ input {
   padding-left: 0 !important;
 }
 
+.fc-bg-event.custom-background {
+  background-image: url("../img/svg/noti.svg") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  /* background-repeat: no-repeat !important; */
+  /* background-position: center !important; */
+}
+
+.fc .fc-daygrid-day-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-daygrid-day-number {
+  text-align: center !important; /* Căn giữa các số trong ngày */
+}
+
 /* Extra small devices (portrait phone, less than 576px) */
 @media (max-width: 575.98px) {
   .row .col-md-4 {
@@ -642,6 +667,10 @@ input {
   }
 
   .card-item-rt {
+    width: 5% !important;
+  }
+
+  .card-item-right {
     width: 25% !important;
   }
 

@@ -159,7 +159,11 @@
             </div>
           </nav>
           <div class="nav-respon">
-            <div class="close-nav">
+            <div
+              class="close-nav"
+              style="display: flex; width: 100%; justify-content: space-between"
+            >
+              <img src="./assets/img/logo.png" alt="" style="width: 130px" />
               <i class="fa-solid fa-x"></i>
             </div>
             <div class="nav-content">
@@ -454,7 +458,7 @@
                         <div class="card-item">
                           <div class="card-item-lf">
                             <span class="center">Từ vựng</span>
-                            <div class="card-item-rt">
+                            <div class="card-item-right">
                               <div><label>55</label></div>
                               <div class="form-check">
                                 <input
@@ -474,7 +478,7 @@
                         <div class="card-item">
                           <div class="card-item-lf">
                             <span class="center">Ngữ pháp</span>
-                            <div class="card-item-rt">
+                            <div class="card-item-right">
                               <label>5</label>
                               <div class="form-check">
                                 <input
@@ -494,7 +498,7 @@
                         <div class="card-item">
                           <div class="card-item-lf">
                             <span class="center">Đọc hiểu</span>
-                            <div class="card-item-rt">
+                            <div class="card-item-right">
                               <label>3</label>
                               <div class="form-check">
                                 <input
@@ -569,17 +573,35 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
           locale: "vi",
-
+          selectable: true,
           buttonText: {
             today: "Hôm nay",
             month: "Tháng",
             week: "Tuần",
             day: "Ngày",
           },
-          dateClick: function (info) {
-            alert("Bạn đã click vào ngày: " + info.dateStr);
-          },
+          events: [
+            {
+              start: "2024-05-10",
+              end: "2024-05-12",
+              display: "background",
+              className: "custom-background",
+            },
+            {
+              start: "2024-05-13",
+              end: "2024-05-19",
+              display: "background",
+              className: "custom-background",
+            },
+            {
+              start: "2024-05-20",
+              end: "2024-05-26",
+              display: "background",
+              className: "custom-background",
+            },
+          ],
         });
+
         calendar.render();
       });
     </script>

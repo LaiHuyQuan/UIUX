@@ -1,4 +1,4 @@
-const Swal2 = Swal.mixin({
+ const Swal2 = Swal.mixin({
   customClass: {
     input: "form-control",
   },

@@ -161,6 +161,34 @@ $(document).ready(function () {
     });
   });
 
+  $(".header-top-right").on("click", ".burger-btn", function () {
+    $(".nav-respon").css("left", "0px");
+    $(".shadow").css("display", "block");
+  });
+
+  $(".close-nav").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(".shadow").css("display", "none");
+  });
+
+  $(".shadow").click(function () {
+    $(".nav-respon").css("left", "-500px");
+    $(this).css("display", "none");
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-top").fadeIn();
+    } else {
+      $(".scroll-top").fadeOut();
+    }
+  });
+
+  $(".scroll-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+
   // document.getElementById("toast-success").addEventListener("click", () => {
   //   Toast.fire({
   //     icon: "success",
