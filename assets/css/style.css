@@ -711,4 +711,8 @@ input {
   .nav-respon h3 {
     font-size: calc(1.3rem + 0.6vw) !important;
   }
+
+  .secu-h3 {
+    font-size: 1.5em !important;
+  }
 }
