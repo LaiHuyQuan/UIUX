@@ -1,3 +1,16 @@
+/* important */
+.layout-horizontal .main-navbar {
+  background-color: #379ffa;
+  padding: 1rem;
+}
+
+#main.layout-horizontal {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(202, 244, 255, 0.3);
+}
+/*  */
+
 html {
   padding: 0;
   margin: 0;
@@ -73,7 +86,7 @@ input {
 
 .kpi-list {
   width: 100%;
-  background-color: #435ebe;
+  background-color: #5ab2ff;
   border: 1px #000 solid;
   border-radius: 20px;
   margin: 0 0 30px 0;
@@ -412,10 +425,12 @@ input {
 .slide-item {
   /* border: #000 1px solid; */
   width: 20%;
-  background-color: #57caeb;
+  background-color: #e6f6ff;
+  border: 1px #000 solid;
   padding: 5px 15px;
   border-radius: 20px;
   color: #000;
+  cursor: pointer;
 }
 
 .item-top,
@@ -431,7 +446,9 @@ input {
 }
 
 .done {
-  background-color: #33e9ab;
+  color: #00ffb3;
+  background-color: #000;
+  border-radius: 100px;
 }
 
 .doing {
@@ -530,6 +547,10 @@ input {
 
 .fc-daygrid-day-number {
   text-align: center !important; /* Căn giữa các số trong ngày */
+}
+
+.cl-blue {
+  background-color: #5ab2ff;
 }
 
 /* Extra small devices (portrait phone, less than 576px) */

@@ -18881,10 +18881,6 @@ body .bi:before,
 .layout-horizontal .submenu-item.active a {
   font-weight: 700;
 }
-.layout-horizontal .main-navbar {
-  background-color: #435ebe;
-  padding: 1rem;
-}
 .layout-horizontal .main-navbar ul {
   list-style: none;
   padding: 0;
@@ -19324,10 +19320,6 @@ body .bi:before,
 #main.layout-navbar {
   padding: 0;
   transition: margin-left 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-#main.layout-horizontal {
-  padding: 0;
-  margin: 0;
 }
 #main #main-content {
   padding: 2rem;

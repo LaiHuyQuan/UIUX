@@ -1,4 +1,4 @@
- const Swal2 = Swal.mixin({
+const Swal2 = Swal.mixin({
   customClass: {
     input: "form-control",
   },
@@ -65,11 +65,15 @@ $(document).ready(function () {
         data: [13, 23, 20, 8, 13, 27, 33],
       },
     ],
+    theme: {
+      mode: "light",
+      color: "#000",
+    },
     chart: {
       type: "bar",
       height: "100%",
       width: "90%",
-      stacked: true,
+      stacked: false,
       stackType: "100%",
     },
     grid: {
@@ -110,7 +114,7 @@ $(document).ready(function () {
     legend: {
       position: "bottom",
     },
-    colors: ["#059bfe", "#ff4069"],
+    colors: ["#5AB2FF", "#b2bec3"],
   };
 
   loadSlider();
