@@ -5,6 +5,7 @@ html {
 .top-blc,
 .mid-blc,
 .bot-blc {
+  background-color: #fff;
   padding: 30px;
   width: 100%;
   border: 1px #000 solid;
@@ -47,4 +48,9 @@ select {
   .page-footer {
     display: none !important;
   }
+}
+
+.form-check-input:checked {
+  background-color: #379ffa;
+  border-color: #379ffa;
 }

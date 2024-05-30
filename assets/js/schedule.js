@@ -15,6 +15,20 @@ const Toast = Swal.mixin({
     toast.addEventListener("mouseleave", Swal.resumeTimer);
   },
 });
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  },
+  false
+);
+
 $(document).ready(function () {
   $(".add-kpi-mockup").on("click", ".add-action", function () {
     var blcItem =
