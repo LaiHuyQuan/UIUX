@@ -58,11 +58,11 @@ $(document).ready(function () {
     series: [
       {
         name: "Hoàn thành",
-        data: [44, 55, 41, 67, 22, 0, 0],
+        data: [25, 15, 20, 12, 22, 0, 0],
       },
       {
         name: "Chưa hoàn thành",
-        data: [13, 23, 20, 8, 13, 27, 33],
+        data: [0, 0, 5, 10, 27, 30, 10],
       },
     ],
     theme: {

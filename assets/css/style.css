@@ -154,7 +154,7 @@ input {
 }
 
 .add-btn {
-  padding: 5px 10px;
+  padding: 3px 6px;
   border: 1px #000 solid;
   border-radius: 20px;
   transition: all ease-in-out 0.25s;
@@ -326,7 +326,7 @@ input {
 
 .item-lf-dis {
   padding: 3px 12px;
-  background-color: #fbdfdf;
+  background-color: #67e8f9;
   border-radius: 20px;
   border: #000 1px solid;
 }
@@ -404,7 +404,7 @@ input {
 
 .hd-lf {
   font-size: 16px;
-  background-color: #fbdfdf;
+  background-color: #67e8f9;
   padding: 5px 10px;
   border: 1px #000 solid;
   border-radius: 20px;
@@ -425,7 +425,7 @@ input {
 .slide-item {
   /* border: #000 1px solid; */
   width: 20%;
-  background-color: #e6f6ff;
+  background-color: #5ab2ff;
   border: 1px #000 solid;
   padding: 5px 15px;
   border-radius: 20px;
@@ -446,8 +446,8 @@ input {
 }
 
 .done {
-  color: #00ffb3;
-  background-color: #000;
+  color: #00ff1e;
+  /* background-color: #000; */
   border-radius: 100px;
 }
 

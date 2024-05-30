@@ -569,13 +569,13 @@ a {
 
 .nav-respon {
   position: fixed;
-  left: -500px;
+  left: -100%;
   background-color: #ffffff;
   top: 0px;
   height: 100vh;
   overflow: hidden;
   z-index: 100;
-  width: 400px;
+  width: 100%;
   max-width: 100%;
   transition: all ease-in-out 0.4s;
   padding: 15px 20px;
