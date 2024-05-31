@@ -11,6 +11,7 @@ html {
   border: 1px #000 solid;
   border-radius: 20px;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
 }
 
 .mid-hd {

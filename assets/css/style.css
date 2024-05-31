@@ -2,6 +2,9 @@
 .layout-horizontal .main-navbar {
   background-color: #379ffa;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+  position: sticky;
+  top: 0;
 }
 
 #main.layout-horizontal {
@@ -91,6 +94,7 @@ input {
   border-radius: 20px;
   margin: 0 0 30px 0;
   padding: 20px 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
 }
 .responsive {
   position: relative;
@@ -140,6 +144,7 @@ input {
   border: 1px #000 solid;
   border-radius: 20px;
   overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
 }
 
 .card-hd {
@@ -486,9 +491,7 @@ input {
 
 .slick-next,
 .slick-prev {
-  opacity: 1 !important;
-  color: #000 !important;
-  margin-top: -10px;
+  display: none;
 }
 
 .gray-bg,
