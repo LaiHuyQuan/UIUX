@@ -418,6 +418,7 @@ input {
   border-radius: 20px;
   color: #000;
   font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 .hd-rt {
@@ -440,6 +441,7 @@ input {
   border-radius: 20px;
   color: #000;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 .item-top,
