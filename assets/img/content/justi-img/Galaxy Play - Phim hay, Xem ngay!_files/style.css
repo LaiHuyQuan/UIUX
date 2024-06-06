@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:  sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+#heading {
+    position: fixed;
+    background: #000;
+    padding: 8px 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    z-index: 2;
+}
+
+
+
+#heading .logo {
+    margin: 8px;
+    width: 80px;
+    height: 50px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+#heading #nav .nav-item a{
+    color: hsla(0,0%,100%,.6);
+    padding: 8px 18px;
+    line-height: 34px;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+    text-decoration: none;
+    line-height: 56px;
+}
+
+#heading #nav .nav-item:hover a {
+    color: #fff;
+}
+
+.sign-in-button {
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 12px;
+    color: #fff;
+    background: #000;
+    border: #fff solid 1px;
+    height:40px;
+    width: 124px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: all ease-in-out 0.5s;
+    text-decoration: none;
+    line-height: 35px;
+    text-align: center;
+}
+
+.sign-in:hover .sign-in-button{
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+
+}
+
+#slider {
+    /* background: url(../img/slider/noi-loan.jpg) right center / cover no-repeat; */
+    width: 100%;
+    height: 850px;
+    /* margin-top: 72px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute; */
+}
+
+.carousel-item {
+    position: relative;
+}
+
+#slider .carousel-item .dis {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 600px;
+    height: 500px;
+    color: #fff;
+}
+
+.regis-button {
+    background-color: #fff;
+    width: 297px;
+    height: 56px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 100px;
+    line-height: 56px;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.regis-button a {
+    color: #000 ;
+    text-decoration: none;
+}
+
+.regis-button:hover  {
+    color: #000 ;
+    text-decoration: none;
+    background-color: #dde2e5;
+    cursor: pointer;
+}
+
+.regis-line {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 85px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.regis-line:hover {
+    text-decoration:  underline;
+    color: #fff ;
+}
+
+#content {
+    background:#000;
+    width: 100%;
+    height: 7000px;
+}
+
+#content > .justify-content1 {
+    padding: 68px;
+    position: relative;
+    height: 850px;
+}
+
+
+#content .heading {
+    width: 447px;
+    height: 180px;
+    color: #fff;
+    font-weight: 670;
+    font-size: 38px;
+    margin-bottom: 36px;
+    line-height: 55px;
+}
+
+.justi-left-block {
+    position: absolute;
+    display: inline-block;
+    width: 593px;
+    height: 770px;
+    top:70px ;
+    left:60px ;
+}
+
+.justi-des {
+    padding: 0;
+}
+
+.justi-des-item {
+    color: #a9aaad;
+    font-size: 19px;
+    margin-bottom: 16px;
+    padding: 0;
+    
+}
+
+.regis-btn {
+    background-color: #000;
+    width: 190px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: #fff solid 2px ;
+    border-radius:  25px;
+    font-size: 16px;
+    /* font-weight: 600; */
+    margin-top: 40px;
+    transition: all ease-in-out 0.5s;
+}
+
+.regis-btn a {
+    color: #fff ;
+    text-decoration: none;
+}
+
+.regis-btn:hover  {
+    text-decoration: none;
+    background-color: #dde2e5;
+    cursor: pointer;
+}
+
+.regis-btn:hover a {
+    color: #000;
+}
+
+.des {
+    color: #a9aaad;
+    font-size: 18px;
+    margin: 89px 0 20px 0;
+}
+
+.partner-img {
+    display: inline-block;
+    height: 61px;
+    margin: 0 18px 30px 18px;
+    
+}
+
+.partner-img2 {
+    display: inline-block;
+    height: 38px;
+    margin: 0 44px;
+}
+
+
+
+.justi-right-block {
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    display: inline-block;
+    margin-top: -225px;
+    width: 712px;
+    height: 700px;
+    margin: 0 -12px;
+}
+.img-row1 {
+    width: 237px;
+    position: absolute;
+    left: 0px;
+}
+
+.row1-3 {
+    width: 237px;
+    padding: 12px 12px ;
+    border-radius: 30px;
+    
+}
+
+.img-row2 {
+    position: absolute;
+    width: 237px;
+    left: 237px;
+    top: -30px;
+}
+.row2 {
+    width: 237px;
+    padding:12px 12px ;
+    border-radius: 30px;
+}
+
+.img-row3 {
+    width: 237px;
+    position: absolute;
+    left: 474px;
+}
+
+
+#content > .justify-content2 {
+    position:  relative;
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.justi-left-block2 {
+    position: absolute;
+    left: 60px;
+    top: 130px;
+    color: #fff;
+}
+
+#content .justi-left-block2 span {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#content .justi-left-block2 p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#content .justi-left-block2 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 20px;
+    text-align: top;
+}
+
+
+#content .justi-left-block2 h3 {
+    display: inline-block;
+}
+
+#content .justi-right-block2 {
+    position: absolute;
+    right: 60px;
+    top: 130px;
+}
+
+#content .justi-right-block2 img {
+    width: 806px;
+    padding-top: 100px ;
+}
+
+
+.head-block {
+    width: 100%;
+    height: 80px;
+}
+
+.head-block .tittle {
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+#footer {
+    
+}

@@ -2,66 +2,135 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- include: fontawesome -->
+    <title>Galaxy Play - Phim hay, Xem ngay!</title>
+    <!-- include jQuery -->
+    <link
+      rel="shortcut icon"
+      href="./assets/svg/favicon.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMzIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iMzQiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSIzMyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzQiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249Ijk2LjAiCiAgIHRpZmY6WVJlc29sdXRpb249Ijk2LjAiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJwcm9kdWNlZCIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWZmaW5pdHkgRGVzaWduZXIgMS4xMC4xIgogICAgICBzdEV2dDp3aGVuPSIyMDIyLTAzLTMxVDEwOjUwOjIzKzAyOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5V57uAAAABgmlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKJF1kc8rRFEUxz9maORHo1hYKC9hISNGTWwsRn4VFmOUX5uZZ36oeTOv954kW2WrKLHxa8FfwFZZK0WkZClrYoOe87ypmWTO7dzzud97z+nec8ETzaiaWd4NWtYyIiNhZWZ2TvE946WZSjqoj6mmPjE1HKWkfdxR5sSbgFOr9Ll/rXoxYapQVik8oOqGJTwqPL5i6Q5vCzeo6dii8KlwpyEXFL519LjLLw6nXP5y2IhGBsFTJ6ykijhexGra0ITl5bRqmWU1fx/nJTWJ7PSUxBbxJkwijBBGYYwhBgnRQ7/MIQIE6ZIVJfK7f/MnyUmuKrPOKgZLpEhj0SnqslRPSEyKnpCRYdXp/9++msneoFu9JgwVT7b91ga+LfjetO3PQ9v+PgLvI1xkC/m5A+h7F32zoLXug38dzi4LWnwHzjeg8UGPGbFfySvuSSbh9QRqZ6H+Gqrm3Z7l9zm+h+iafNUV7O5Bu5z3L/wAdthn7QIme0YAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJTSURBVFiF7Zi9axRBGIefEw2IdxFBRQsLWUTBaywSK4ubdSGVIY1Y6HZql8ZKCGIqwX/AYLmCgVQKfiDn7jZeEQMWfsSAHAiKqPiB5mIgELWYOW5vzc3O7niHhT/YZvY37/swM/vOzJbIqVq9uQ04CYwCI8AhYAlYAB4Dc7HnrOSJWcoJcBS4ARzQ2F4BZ2LPmTeNuykHwEWgkQGAet9QfiMZjUSt3hwD7psGTWgs9pwH1hC1enMYeA7sKwDxBqjGnvNdZzKZjqmCAKh+U1kmEwi3IEBbIsugnY5avTkEtIAtFhBrQCX2nLVehqyRqFoCAAwBh3WGLAhbgCRIYYinwLolwLqKUwwi9pxV4KUlxKKKUwxC6ZElRCPLYAJxGfhSEOCz6m8HEXvOB2CyIMSk6m8HoXQTmMkJcA2YNTHm3congOvATo3tE3A29pxbpnFzQSiQPcB55IFmFNgFfEQeahaAGZMpsIJIAZWAHcDX2HN+2cT6r39GxmvC9aPNwH5gO1BOPFuBVWAZue0vA9+A12EgjPadnhCuH1WAE8ivYAQ4ohKaagV4gvxi5oG7YSA2vApsCOH60WngKrA3R9IsvQUuhIGY00K4flQG7gHH/mLytB4C42EgfrQb0mV7us8AAMeBS8mGNMR4nwHamtBB7B4QRNdaS0M8GxDEog7iyoAguvJ0QYSBuAOcAt71Kfl7wA8DcTvZ2KtOlJEr+ByyQtqqhTyHTIeB+ONeqi3brh+VgIN0fohUgWGggizZFTplu12yW8iy/YLOGWMpDMTPXnl+Az9vj2HERYqPAAAAAElFTkSuQmCC"
+      type="image/png"
+    />
+
     <script
       src="./assets/css/fonts/fontawesome.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="./assets/extension/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- include: css-file  -->
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css file -->
     <link rel="stylesheet" href="./assets/css/trangchu.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/landing.css" />
   </head>
 
   <body>
-    <!-- begin content -->
-    <div id="content" class="center">
-      <div class="lg-form">
-        <form class="login-form" action="">
-          <h2 class="hd" style="margin-bottom: 2px">Đăng nhập</h2>
-          <i class="fa-solid fa-user line1"></i>
-          <input type="text" placeholder="Địa chỉ Email" />
-          <i class="fa-solid fa-shield-halved line2"></i>
-          <input
-            class="form-control"
-            id="password-login"
-            type="password"
-            placeholder="Mật khẩu của bạn"
-          />
-          <span class="icon js-password icon-hide"></span>
-          <div class="form-check" style="font-size: 16px">
-            <input class="form-check-input" type="checkbox" value="" id="" />
-            <label class="form-check-label" for="">Lưu tài khoản </label>
-          </div>
-          <div class="button">
-            <a href="" class="fg-pass center">Quên mật khẩu</a>
-            <button class="login-btn">
-              <a href="dashboard.html">Đăng nhập</a>
-            </button>
-          </div>
-          <div class="or center"><span>hoặc</span></div>
-          <div class="center" style="flex-direction: column">
-            <div class="n-login center">
-              <img src="./assets/img/login/fb.svg" alt="" />
-              <a href="dashboard.html"> Tiếp tục với Facebook </a>
-            </div>
-            <div class="n-login center">
-              <img src="./assets/img/login/gg.svg" alt="" />
-              <a href="dashboard.html"> Tiếp tục với Google </a>
-            </div>
-          </div>
-          <div class="regis">
-            <span class="center">Bạn chưa có tài khoản</span>
-            <a href="regis.html" class="regis-button">ĐĂNG KÝ</a>
-          </div>
-        </form>
+    <script>
+      $(document).ready(function () {
+        $(".hcontent i").click(function () {
+          $("#nav-respon").stop().fadeToggle(500);
+        });
+      });
+    </script>
+    <!-- begign: heading -->
+    <div id="heading">
+      <!-- begin logo -->
+      <div class="logo center" style="display: flex">
+        <img
+          src="./assets/img/logo.png"
+          alt=""
+          style="width: 50px; height: 50px"
+        />
+        <span style="font-weight: bolder; color: #000; font-size: 25px"
+          >eReminder</span
+        >
+      </div>
+
+      <div class="sign-in">
+        <a class="sign-in-button" href="login.html">
+          <i class="fa-solid fa-user"></i>
+          Đăng nhập</a
+        >
       </div>
     </div>
-    <!-- begin footer -->
+    <!-- begin heading-min  -->
+
+    <!-- begin: slider -->
+    <div id="landing-content" class="center" style="flex-direction: column">
+      <div class="page-dis-top center">
+        <span style="font-size: 30px; font-weight: bold"
+          >Hãy sắp xếp cuộc sống và công việc của bạn.</span
+        >
+        <br />
+        <span style="font-size: 20px; text-align: center"
+          >Đạt được sự tập trung, tổ chức và an tâm với eReminder. Việc quản lý
+          nhiệm vụ đầu tiên và ứng dụng danh sách việc cần làm.</span
+        >
+        <a href="regis.html" class="regis-button" style="font-size: 20px"
+          >Đăng kí</a
+        >
+      </div>
+      <div class="page-dis-bot">
+        <div class="page-dis-cnt-1">asd</div>
+        <div class="page-dis-cnt-2">asd</div>
+        <div class="page-dis-cnt-1">asd</div>
+        <div class="page-dis-cnt-2">asd</div>
+      </div>
+    </div>
 
     <!-- end footer -->
+    <!-- FullCalendar JS -->
+    <script src="./assets/extension/fullcalendar/main.min.js"></script>
+    <!-- FullCalendar Locales -->
+    <script src="./assets/extension/fullcalendar/locales-all.min.js"></script>
+
+    <!-- slick -->
+    <script
+      src="./assets/js/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="./assets/js/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./assets/extension/jquery-3.7.1.min.js"></script>
   </body>
 </html>

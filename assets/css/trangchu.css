@@ -35,6 +35,51 @@ a {
 
 /* begin: pc */
 
+#heading {
+  position: fixed;
+  background: #379ffa;
+  background: linear-gradient(180deg, #379ffa 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 8px 50px;
+  width: 100vw;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  top: -1px;
+}
+
+#heading .logo {
+  margin: 8px;
+  width: 80px;
+  height: 50px;
+}
+
+.sign-in-button {
+  margin-top: 5px;
+  margin-right: 3vw;
+  position: absolute;
+  display: block;
+  right: 40px;
+  top: 12px;
+  color: #fff;
+  background: #000;
+  border: #fff solid 1px;
+  height: 40px;
+  width: 124px;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  line-height: 35px;
+  text-align: center;
+}
+
+.sign-in:hover .sign-in-button {
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
 .heading {
   padding-left: 80px;
   padding-right: 50px;
