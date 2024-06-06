@@ -40,7 +40,7 @@ a {
   background: #379ffa;
   background: linear-gradient(180deg, #379ffa 0%, rgba(255, 255, 255, 0) 100%);
   padding: 8px 50px;
-  width: 100vw;
+  width: 100%;
   height: 72px;
   display: flex;
   justify-content: space-between;

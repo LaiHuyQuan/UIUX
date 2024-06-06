@@ -29,6 +29,7 @@ html {
 }
 
 .page-dis-cnt-1 {
+  padding: 20px;
   width: 20%;
   height: 100%;
   background-color: #fff;
@@ -37,14 +38,101 @@ html {
 }
 
 .page-dis-cnt-2 {
+  padding: 20px;
   width: 20%;
   height: 100%;
   background: rgb(11, 183, 245);
   background: linear-gradient(
     0deg,
-    rgba(11, 183, 245, 1) 0%,
-    rgba(43, 106, 208, 1) 100%
+    rgba(43, 106, 208, 1) 0%,
+    rgba(11, 183, 245, 1) 100%
   );
   border-radius: 20px;
   color: #fff;
+}
+
+.pd-img {
+  height: 100%;
+}
+
+.pd-cnt-top {
+  height: 40%;
+}
+
+.pd-cnt-bot {
+  flex-direction: column;
+  height: 60%;
+}
+
+.pd-cnt-bot > div > span {
+  font-size: 50px;
+}
+
+.page-dis-cnt {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.page-dis-cnt:hover {
+  scale: 1.1;
+}
+
+.pd-cnt-bot > span {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  html {
+    overflow: auto !important;
+    /* overflow-x: hidden !important;x */
+  }
+
+  #landing-content {
+    height: auto;
+  }
+
+  .page-dis-top,
+  .page-dis-bot {
+    width: 90%;
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .page-dis-top > .span1 {
+    font-size: 25px !important;
+    text-align: center;
+  }
+
+  .span2 {
+    font-size: 16px !important;
+  }
+
+  .page-dis-bot {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .page-dis-cnt {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pd-cnt-bot,
+  .pd-cnt-top {
+    height: 100px;
+  }
+
+  .pd-cnt-top {
+    width: 30%;
+  }
+
+  .pd-img {
+    display: block;
+    width: 100%;
+  }
 }
