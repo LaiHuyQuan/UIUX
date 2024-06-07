@@ -1,11 +1,11 @@
 .kpi-list .add-btn {
   background-color: #000;
   color: #fff;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
 }
 
 .kpi-list .add-btn:hover {
-  background-color: transparent;
+  background-color: #fff;
   color: #000;
 }
 .options-mockup {

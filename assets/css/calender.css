@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.add-btn:hover {
+  scale: 1.05;
+}
+
 .calender-item .card-item-rt {
   justify-content: flex-end;
 }

@@ -737,3 +737,16 @@ input {
     font-size: 1.5em !important;
   }
 }
+
+.kpi-list .card {
+  transition: all 0.3s;
+}
+
+.kpi-list .card:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  scale: 1.05;
+}
+
+.add-btn:hover {
+  scale: 1.05;
+}
